@@ -16,7 +16,7 @@ function Chat() {
   return (
     <App>
       <div className="chat">
-        <Userlist/>
+         <Userlist/>
         <Chatbox data={chatData}/>
         <Inputbox/>
       </div>
