@@ -22,7 +22,7 @@
 .inputbox {
   flex: 1;
   background-color: #eeeee4;
-  
+  display: flex;
 }
 
 .inputbox .label1 {
@@ -31,9 +31,7 @@
 }
 
 .inputbox .text {
-  font-size: 3em;
-  padding-left: 30%;
-  padding-right: 30%;
+  font-size: 2em;
   flex: 2;
   border-radius: 5%;
 }
