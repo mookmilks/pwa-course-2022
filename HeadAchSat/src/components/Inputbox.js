@@ -8,6 +8,12 @@ export function Inputbox (props) {
       <label className="label1" for="inputmsg">
         {props.label}
       </label>
+      <input 
+        type="button" 
+        value="+" 
+        onClick={() => props.onClick(value)} 
+        className="button"
+      />   
       <input
         id="inputmsg"
         type="text"
@@ -24,6 +30,7 @@ export function Inputbox (props) {
         onClick={() => props.onClick(value)} 
         className="button"
       />    
+    
     </div>
   )
 }
