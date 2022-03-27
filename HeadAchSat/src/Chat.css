@@ -15,7 +15,7 @@
 }
 
 .chat {
-  flex: 11;
+  flex: 10;
   background-color: #d9b490;
 }
 
@@ -26,23 +26,22 @@
 }
 
 .inputbox .label1 {
-  font-size: 1.5 em;
   text-align: left;
 }
 
 .inputbox .text {
-  font-size: 2em;
+  font-size: 0.5em;
   flex: 2;
-  border-radius: 5%;
 }
 
 .inputbox .button {
-  font-size: 2em;
-  min-width: 70px;
-    height: 70px;
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  min-width: 90px;
+  max-height: 90px;
     border-radius: 50%;
     background-color: #b08051;
-    margin-left: 10px;
+    margin: 25px;
 }
 
 

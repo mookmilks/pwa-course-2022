@@ -1,4 +1,4 @@
-import App from './Chat';
+import Chat from './Chat';
 import Profile from './Profile';
 import Function from './Function'
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
