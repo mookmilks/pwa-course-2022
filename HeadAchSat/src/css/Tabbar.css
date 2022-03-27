@@ -1,0 +1,13 @@
+.tabbar {
+  height: 150px;
+  background-color: #eeeee4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabbar.stick-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

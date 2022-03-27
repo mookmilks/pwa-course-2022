@@ -1,4 +1,4 @@
-import './App.css';
+import './Chat.css';
 import { Chat } from'./components/Chat.js';
 import { Head } from'./components/Head.js';
 import { Inputbox } from'./components/Inputbox.js';
