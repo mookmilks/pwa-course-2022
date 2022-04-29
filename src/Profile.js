@@ -7,9 +7,14 @@ import { useAuthStateContext } from './context/FirebaseAuthContextProvider';
 function Profile() {
   const { authState, updateDisplayName, signOut } = useAuthStateContext();
   const [name, setName] = useState(authState.user.displayName);
-
+  const [emostatus, setEmostatus] = useState(authState.user.displayName);
   function save() {
     updateDisplayName(name).then(_=>{
+      authState.user.reload()
+    })
+  }
+  function savestatus() {
+    updateDisplayName(emostatus).then(_=>{
       authState.user.reload()
     })
   }
@@ -23,7 +28,8 @@ function Profile() {
         <input 
           id="displayname"
           type="text" 
-          className="text" 
+          className="text"
+          placeholder="Name"
           value={name}
           onChange={e => setName(e.target.value)}
         />

@@ -7,5 +7,4 @@ function Titlebar ({value}) {
     </div>
   )
 }
-
 export default Titlebar;

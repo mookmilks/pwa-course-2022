@@ -43,7 +43,7 @@ function PrivateChat() {
 
   return (
     <App>
-      <div className="chat">
+      <div className="chat friend-list-text-align">
         <Titlebar value={friendName}/>
         <Chatbox data={chatData}/>
         <Inputbox onEnter={x=>sendPrivateMsg(x,uid)}/>

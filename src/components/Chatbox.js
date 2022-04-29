@@ -16,10 +16,13 @@ function Chatbox (props) {
       {
         data.map((item,i) => {
           return (<div ref={myRef} key={`${item.key}-${i}`} className={`chatbox-item ${item.position}`}>
-            <div className="chatbox-item username">{item.displayName}</div>
+    
+           <div className="bg">
+            <div className="chatbox-item-text">
             <Avatar name={item.displayName}/>
-            <div className="chatbox-item text">
+             <div>{item.displayName}: </div>
               <Chatline text={item.msg}/>
+            </div>
             </div>
           </div>)
         })
